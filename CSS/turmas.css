@@ -1,0 +1,61 @@
+.turmas{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+    background-color: black;
+}
+
+.card-turmas {
+    width: 350px;
+    height: 254px;
+    /* background: #07182E; */
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .card-turmas img{
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+    z-index: 5;
+    border-radius: 20px;
+  }
+   
+  .card-turmas::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    background-image: linear-gradient(180deg, rgb(0, 4, 255), #f7941d);
+    height: 200%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+    z-index: 0;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card-turmas::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  /* .card-turmas:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+  
+  
