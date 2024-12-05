@@ -1,14 +1,19 @@
+a{
+  text-decoration: none;
+}
+
 .turmas{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
     gap: 30px;
     background-color: black;
+    justify-content: center;
 }
 
 .card-turmas {
-    width: 350px;
-    height: 254px;
+    width: 650px;
+    height: 454px;
     /* background: #07182E; */
     position: relative;
     display: flex;
@@ -58,4 +63,40 @@
     animation: rotBGimg 3.5s linear infinite;
   } */
   
+  .dados-turma{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .nome-turma {
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    gap: 10px;
+  }
   
+
+  @media screen and (max-width: 480px){
+
+    .card-turmas {
+      width: 380px;
+      height: 284px;
+      /* background: #07182E; */
+      position: relative;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .dados-turma{
+      
+      height: 284px;
+      width: 380px;
+      
+    }
+  }

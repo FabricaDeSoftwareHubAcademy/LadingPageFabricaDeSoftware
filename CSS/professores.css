@@ -1,18 +1,23 @@
+.main{
+    min-height: 100vh;
+}
 .home-docentes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     padding-top: 200px;
-    height: 100vh;
+    height: 100%;
     position: relative;
+    margin-bottom: 200px;
   
 }
 .content{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    
 }
 .content h1{
     color: #fff;
@@ -25,30 +30,32 @@
 
 
 .container {
-    height: 60vh;
+   
     width: 100%;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
 
 }
 
 .border {
-    height: 369px;
-    width: 300px;
+    height: 30px;
+    width: 280px;
     background: transparent;
     border-radius: 10px;
     transition: border 1s;
     position: relative;
 }
-
+.card-nome{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .card {
     height: 379px;
     width: 250px;
-    background: grey;
+    /* background: grey; */
     border-radius: 10px;
     transition: background 0.8s;
     overflow: hidden;
@@ -131,21 +138,22 @@ h2 {
 
 @media (max-width: 1024px) {
     .home-docentes {
-        padding-top: 250px; /* Aumenta o espaçamento superior */
-        min-height: 110vh; /* Incrementa a altura mínima para telas médias */
+        min-height: 150vh; /* Incrementa a altura mínima para telas médias */
+        gap: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .home-docentes {
-        padding-top: 300px;
-        min-height: 120vh; /* Mais espaço para telas menores */
+        /* padding-top: 300px; */
+        min-height: 180vh; /* Mais espaço para telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .home-docentes {
-        padding-top: 350px;
-        min-height: 130vh; /* Para telas muito pequenas */
+        /* padding-top: 350px; */
+        min-height: 300vh; /* Para telas muito pequenas */
+        padding-bottom: 100px;
     }
 }
